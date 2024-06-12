@@ -33,9 +33,9 @@ app.config["SECRET_KEY"] = "GigaSecretKeyOfHell"
 class XForm(FlaskForm):
     # TODO: Fix validators and add restrictions to inputs
     email = StringField("Enter your email:", )
-    username = StringField("Enter your username:")
+    #username = StringField("Enter your username:")
     password = PasswordField("Enter your password:")
-    submit = SubmitField("Submit")
+    submit = SubmitField("Delete")
 
 
 @app.route("/", methods=["GET", "POST"])
@@ -58,12 +58,6 @@ def home():
         email_field.click()
         email_field.send_keys(email)
         email_field.send_keys(Keys.ENTER)
-        time.sleep(2)
-
-        # Enter username
-        username_field = driver.find_element(By.TAG_NAME, value='input')
-        username_field.send_keys(username)
-        username_field.send_keys(Keys.ENTER)
         time.sleep(2)
 
         # Enter password
