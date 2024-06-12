@@ -1,5 +1,20 @@
 body {
-    background-color: white;
+    background-color: #222831;
+    color: #EEEEEE;
 }
+
+#outer-container {
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    color: #222831;
+}
+
+.main-content {
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    color: #222831;
+}
+
+
 
 
